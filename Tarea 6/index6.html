@@ -4,80 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Osiel Carapia Ruiz">
-    <title>Document</title>
+    <title>Listas y formularios</title>
 </head>
 <body>
-    <h1>Listas</h1>
-    <h2>listas no ordenadas</h2>
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
+    <h1>Listas y formularios</h1>
 
-    <h2>listas ordenadas</h2>
-    <ol start="14" reversed>
-        <li>Catorceavo</li>
-        <li>Treceavo</li>
-        <li>Doceavo</li>
-        <li>Onceavo</li>
-        <li>Decimo</li>
-    </ol>
-
-    <h2>listas de definicion</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Lenguaje de marcado de hipertexto</dd>
-        <dt>CSS</dt>
-        <dd>Hojas de estilo en cascada</dd>
-        <dt>JavaScript</dt>
-        <dd>Lenguaje de programación interpretado</dd>
-    </dl>
-
-    <h2>listas anidadas</h2>
-    <p>Desarrollo web</p>
+    <div>
+        <h2>Listas</h2>
+        <h3>Listas no ordenadas</h3>
         <ul>
-            <li>Frontend</li>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Listas ordenadas</h3>
+        <ol type="1" start="14" reversed>
+            <li>Catorceavo</li>
+            <li>Treceavo</li>
+            <li>Doceavo</li>
+            <li>Onceavo</li>
+            <li>Decimo</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3>Listas de definicion</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado de hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hojas de estilo en cascada</dd>
+            <dt>JavaScript</dt>
+            <dd>Lenguaje de programación interpretado</dd>
+        </dl>
+
+        <h3>Listas anidadas</h3>
+        <p>Desarrollo web</p>
+        <ul>
+            <li>Frontend
                 <ol type="I">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                 </ol>
             </li>
-            <li>Backend</li>
+            <li>Backend
                 <ol type="A">
                     <li>Node.js</li>
                     <li>MySQL</li>
                     <li>Arch Linux</li>
                 </ol>
+            </li>
         </ul>
-    
-        <div>
-            <h1>Formularios</h1>
-            <h2>Formulario de inicio de sesion</h2>
+    </div>
 
-            <form action="validar.js" method="get">
-                <label for="username">Nombre de usuario:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                <button type="submit">Iniciar sesión</button>
-        </div>
+    <hr>
 
-        <div>
+    <div>
+        <h2>Formularios</h2>
+        <h3>Formulario de inicio de sesion</h3>
+        <form action="validar.js" method="get">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required><br><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required><br><br>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <hr>
+        <br>
+
+        <h3>Formulario con campo de entrada de varias lineas</h3>
+        <form action="validar.js" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+            <br><br>
+            <label for="opinion">Comentario:</label>
+            <textarea name="opinion" id="opinion" placeholder="Ingrese tu opinion" required rows="5" cols="40"></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <br>
+
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form>
+            <label for="Bebidas">Bebidas:</label>
+            <select name="bebida" id="Bebidas" required>
+                <option value="" disabled selected>Seleccione una bebida</option>
+                <option value="coca-cola">Coca-Cola</option>
+                <option value="volt">Volt</option>
+                <option value="boing">Boing</option>
+                <option value="jarritos">Jarritos</option>
+            </select>
+        </form>
+        <br>
+        <form>
+            <label for="postres">Postres:</label>
+            <select name="postre" id="postres" required>
+                <option value="" disabled selected>Seleccione un postre</option>
+                <option value="pay de limón">Pay de limón</option>
+                <option value="pay de fresa">Pay de fresa</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <hr>
+        <br>
+
+        <h3>Formulario con distintos campos de datos</h3>
+        <form action="datos.php" method="post">
             <fieldset>
-                <legend>Direccion</legend>
-                <label for="calle">Calle:</label>
-                <input type="text" id="calle" name="calle" placeholder="ingrese su calle: " required><br><br>
-                <label for="numero">Número:</label>
-                <input type="text" id="numero" name="numero" placeholder="Ingrese su numero: " required><br><br>
-                <label for="colonia">Colonia:</label>
-                <input type="text" id="colonia" name="colonia" placeholder="Ingrese su colonia: " required>
+                <legend>Nombre completo</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                <br><br>
+                <label for="apellido-paterno">Apellido Paterno:</label>
+                <input type="text" name="apellido-paterno" id="apellido-paterno" placeholder="Ingrese su apellido paterno" required>
+                <br><br>
+                <label for="apellido-materno">Apellido Materno:</label>
+                <input type="text" name="apellido-materno" id="apellido-materno" placeholder="Ingrese su apellido materno" required>
             </fieldset>
-        </div>
 
-        <div>
-            
-        </div>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                <br><br>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" min="18" max="99" required>
+                <br><br>
+                <label for="numero_cuenta">Número de cuenta:</label>
+                <input type="text" name="numero_cuenta" id="numero_cuenta" placeholder="Ingrese su número de cuenta" required minlength="9" maxlength="9" title="El número de cuenta debe tener 9 dígitos" pattern="[0-9]{9}">
+                <br><br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electrónico" required>
+                <br>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <fieldset>
+            <legend>Direccion</legend>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" placeholder="Ingrese su calle: " required><br><br>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="Ingrese su numero: " required><br><br>
+            <label for="colonia">Colonia:</label>
+            <input type="text" id="colonia" name="colonia" placeholder="Ingrese su colonia: " required>
+        </fieldset>
+    </div>
 </body>
 </html>
