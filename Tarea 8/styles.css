@@ -1,0 +1,19 @@
+
+/*Estilos para selector de un elemento*/
+h2 {
+    color: pink;
+}
+
+/*Estilos para selector de una clase*/
+.color-h2{
+    color: yellow;
+}
+
+/*Estilos para selector de un id*/
+.color-h1{
+    color: gold;
+}
+
+#bg-color{
+    background-color: black;
+}

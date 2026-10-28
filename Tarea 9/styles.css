@@ -1,0 +1,42 @@
+
+.rgb{
+    background-color: rgb(255 0 0);
+    color: rgb(50 0 0)
+}
+
+/*Afecta solo a los hijos h2 de la clase RGB*/
+.rgb h2{
+    color: rgb(184, 208, 62);
+}
+
+.rgba{
+    background-color: rgba(0, 0, 200, 0.5);
+}
+.hex{
+    background-color: #44ad42;
+}
+.hsl{
+    background-color: hsl(312, 44%, 50%);
+}
+
+/*colores multinavegador*/
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+    background-color: black;
+}
+
+.salmon{
+    color: salmon;
+}
+
+.blue{
+    color: blue;
+}
+
+.lime{
+    color: lime;
+}
