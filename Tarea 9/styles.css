@@ -1,42 +1,76 @@
-
-.rgb{
+/* Modelo RGB */
+.rgb {
     background-color: rgb(255 0 0);
-    color: rgb(50 0 0)
+    color: rgb(50 0 0);
 }
 
-/*Afecta solo a los hijos h2 de la clase RGB*/
-.rgb h2{
+/* Afecta solo a los hijos h3 de la clase RGB */
+.rgb h3 {
     color: rgb(184, 208, 62);
 }
 
-.rgba{
+/* Modelo RGBA */
+.rgba {
     background-color: rgba(0, 0, 200, 0.5);
-}
-.hex{
-    background-color: #44ad42;
-}
-.hsl{
-    background-color: hsl(312, 44%, 50%);
+    color: rgba(48, 24, 24, 1);
 }
 
-/*colores multinavegador*/
-.black{
+/* Modelo HEX */
+.hex {
+    background-color: #44ad42;
+    color: #fff;
+}
+
+/* Modelo HSL */
+.hsl {
+    background-color: hsl(312, 44%, 50%);
+    color: hsl(58, 51%, 70%);
+}
+
+/* Modelo HSLA (Aplicado al h2 principal) */
+.hsla {
+    background-color: hsla(312, 49%, 37%, 0.406);
+}
+
+/* Colores multinavegador */
+.black {
     color: black;
 }
 
-.white{
+.white {
     color: white;
     background-color: black;
 }
 
-.salmon{
+.salmon {
     color: salmon;
 }
 
-.blue{
+.blue {
     color: blue;
 }
 
-.lime{
+.lime {
     color: lime;
+}
+
+/* Bordes */
+.borde {
+    /* border-style: dotted;
+    border-color: red;
+    border-width: 10px; */
+    border: 10px dotted red;
+}
+
+.borde-interno {
+    border: 2px solid darkred;
+}
+
+/* Degradados */
+.lineal {
+    background: linear-gradient(to top, red, blue);
+}
+
+.radial {
+    background-image: radial-gradient(ellipse, violet, rgb(255, 4, 4));
 }
