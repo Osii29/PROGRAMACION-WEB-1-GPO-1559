@@ -1,0 +1,102 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Encabezado {
+    /* Padding: espacio entre el contenido del elemento y su borde (top, right, bottom, left) */
+    padding: 15px;
+    background-color: black;
+    color: white;
+    /* Margin: espacio entre un elemento HTML y los elementos a su alrededor */
+    margin: 15px 5px;
+    /* Border: contorno visual alrededor del elemento (solid, dashed, dotted, double, groove, ridge, inset, outset, hidden, none) */
+    border: 10px ridge cyan;
+    border-top-style: double;
+    border-left-color: red;
+    border-right-color: red;
+    border-bottom-width: 2px;
+    border-radius: 10%;
+    /* Box-shadow: desplazamiento-horizontal, desplazamiento-vertical, radio-desenfoque, radio-propagacion, color */
+    box-shadow: 5px 5px 5px 5px red;
+    text-decoration: underline;
+}
+
+.Introduccion {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 10px dotted yellow;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px cyan;
+    margin-bottom: 10px;
+}
+
+.Introduccion p {
+    width: 300px;
+    height: 150px;
+    border: 2px dotted gold;
+    padding: 5px;
+    /* Box-sizing: incluye el padding y el borde dentro del ancho y alto total */
+    box-sizing: border-box;
+}
+
+.Introduccion span {
+    width: 300px;
+    height: 150px;
+    border: 5px ridge cyan;
+    padding: 10px;
+    margin: 10px;
+}
+
+.propiedadesTexto {
+    background-color: black;
+    color: white;
+    border: 5px double red;
+    padding: 10px;
+}
+
+.propiedadesTexto h1 {
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px blue;
+}
+
+.propiedadesTexto p {
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.propiedadesFuentes {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: 5px double red;
+    padding: 10px;
+}
+
+.propiedadesFuentes h1 {
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px blue;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+
+.propiedadesFuentes p {
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
