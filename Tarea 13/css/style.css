@@ -1,41 +1,53 @@
+html{
+    font-size: 10px;
+}
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(black, purple);
     background-repeat: no-repeat;
+    padding: 0;
     margin: 0;
     min-height: 100vh;
     color: white;
 }
 
 #Encabezado{
-    border: 5px solid red;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.5rem solid red;
+}
 
+#Encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(84, 56, 63, 0.8);
+}
+
+.contenedorTabla{
+    width: 50%;
+    border: 0.3rem solid yellow;
+    overflow-x: scroll;
 }
 
 .tablaAlumnos{
-    border: 3px solid lime;
+    border: 0.3rem solid lime;
     border-collapse: collapse;
     text-align: center;
     width: 110%;
 }
 
-.tablaAlumnos th{
-    padding: 5px;
-    
+.tablaAlumnos th, .tablaAlumnos td{
+    border: 0.2rem solid lime;
+    padding: 0.5rem;
 }
 
 .tablaAlumnos tr:nth-child(even){
     background-color: pink;
-    color: black
+    color: black;
 }
 
 .tablaAlumnos tr:hover{
     background-color: cyan;
     color: black;
-}
-
-.contenedorTabla{
-    width: 50%;
-    border: 3px solid yellow;
-    overflow-x: scroll;
+    font-size: 1.5rem;
 }

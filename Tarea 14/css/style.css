@@ -1,0 +1,157 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(black, purple);
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100rem;
+    width: 100%;
+}
+
+#Encabezado{
+    border: 0.3rem solid red;
+    position: sticky;
+    text-align: right;
+    z-index: 5;
+    background-color: rgb(65, 10, 85);
+    top: 0;
+    height: 10rem;
+}
+
+#Encabezado ul{
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    top: 0;
+}
+
+.memegato5{
+    border: 0.2rem solid lime;
+    width: 20%;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.memegato5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#Encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(84, 56, 63, 0.8);
+}
+
+#Navegacion ul{
+    list-style-type: none;
+    padding-right: 3rem;
+}
+
+#Navegacion ul li{
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+}
+
+#ElementosPosicionados{
+    border: 0.3rem solid yellow;
+    padding: 1rem;
+    position: relative;
+    height: 87rem;
+}
+
+.memegato1{
+    border: 0.2rem solid lime;
+    width: 45%;
+    max-width: 35rem;
+    height: 38rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.memegato2{
+    border: 0.2rem solid cyan;
+    width: 45%;
+    max-width: 35rem;
+    height: 38rem;
+    margin: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.memegato3{
+    border: 0.2rem solid pink;
+    width: 45%;
+    max-width: 35rem;
+    height: 38rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.memegato4{
+    border: 0.2rem solid magenta;
+    width: 45%;
+    max-width: 35rem;
+    height: 38rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.memegato1 img,
+.memegato2 img,
+.memegato3 img,
+.memegato4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1500px){
+    #Encabezado h1{
+        left: 25%;
+        position: absolute;
+        font-size: 2rem;
+        top: 0;
+    }
+
+    #Encabezado .memegato5{
+        border: 0.2rem solid lime;
+        width: 9.5rem;
+        height: 9.5rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 1rem;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 200px){
+    #Navegacion ul li{
+        display: inline-block;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border: 0.2rem solid white;
+        border-radius: 1rem;
+        font-size: 2rem;
+        position: relative;
+        top: 0;
+    }
+}
